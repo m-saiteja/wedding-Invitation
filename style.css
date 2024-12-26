@@ -2,7 +2,7 @@ body{
     text-align: center;
     background-image: url("./static/template.png");
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
-    font-size: 25px;
+    font-size: 15px;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
