@@ -65,7 +65,7 @@ body{
     height: 30px;
     border-radius: 50%;
     opacity: 0;
-    animation: fall 15s infinite ease-in;
+    animation: fall 7s infinite ease-in;
 }
 
 @keyframes fall {

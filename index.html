@@ -120,6 +120,8 @@
         flowers.forEach(flower => {
         const randomLeft = Math.random() * 100;
         flower.style.left = `${randomLeft}%`;
+        const randomRight = Math.random() * 100;
+        flower.style.right = `${randomRight}%`;
 
         const randomDuration = Math.random() * 6 + 4;
         const randomDelay = Math.random() * 2;
