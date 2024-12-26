@@ -10,8 +10,8 @@ body{
 .imge {
      border: 2px solid rgb(251, 147, 164);
      border-radius:20px;
-     height: 550px;
-     width: 320px;
+     height: 350px;
+     width: 200px;
 }
 .heart-image {
     height: 70px;
@@ -21,9 +21,9 @@ body{
 .location-link {
     text-decoration: none;
     color: #0f0e0e;
-    font-size: 1.2em;
+    /* font-size: 0.7em; */
     background-color: #f991ba;
-    padding: 2.5px 5px;
+    /* padding: 2.5px 5px; */
     border-radius: 2px;
     border: 2px solid #f95e7d;
     transition: all 0.3s ease;
