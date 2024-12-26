@@ -4,7 +4,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
-    font-size: 25px;}
+    font-size: 25px;
+    background-position: center;
+    background-attachment: fixed;
+}
 .imge {
      border: 2px solid pink;
      border-radius:20px;
