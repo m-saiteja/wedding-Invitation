@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="icon" type="x-icon" href="./static/images.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <br><br><br>
+        <div class="flower-container">
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower1.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower2.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower3.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower4.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower5.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower6.png"></div>
+
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower6.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower2.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower5.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower4.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower3.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower1.png"></div>
+
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower5.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower2.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower4.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower3.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower1.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower6.png"></div>
+
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower1.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower4.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower6.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower2.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower5.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower3.png"></div>
+
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower1.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower2.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower3.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower4.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower5.png"></div>
+            <div class="flower"><img class="falling-flowers" src="./static/flowers/flower6.png"></div>
+
+            <br><br><br>
+            <h1 class="h"><span>Wedding</span> Invitation</h1>
+            <h3>"She found her Prince, now He’s stuck with her Forever!"</h3>
+            <img class="imge" src="./static/images.png">
+            <div class="inv">
+                <p>
+                    We solicit your gracious presence with family & friends on the auspicious
+                    occasion of the marriage of
+                    <h1 class="names">Priyanka</h1>
+                    <img class="heart-image" src="./static/love-heart.webp">
+                    <h1 class="names">Vinay</h1>
+                    where Love, Laughter, and a Lifetime of tolerating each other begins!!
+                </p>
+            </div>
+            
+            <div class="details">
+                <h4>Sumuhurtham</h4>
+                <em>
+                    <b>
+                        <h3>
+                            Saturday, 8th February 2025, 11:22 AM
+                        </h3>
+                    </b>
+                </em>
+                which is in <div class="timer" id="countdown"></div>
+                <p>
+                    at
+                    <a href="https://maps.app.goo.gl/BTuXf5pyQvoLrAtr7" 
+                        style="text-align: center;"
+                        target="_blank" 
+                        class="location-link">Kshatriya Kalyanamandapam, Palakollu</a>
+                    followed by lunch
+                </p>
+            </div>
+            <div>
+                <p>
+                    We would love for you to join us in celebrating this momentous day,<br> 
+                    share in the joy, and create memories that will last a lifetime.
+                </p>
+            </div>
+            <div class="salutation">
+                Yours <br>
+                Priyanka - Vinay
+            <br><br><br><br><br><br>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const targetDate = new Date("February 8, 2025 11:22:00").getTime();
+        const countdownInterval = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("countdown").innerHTML = `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown").innerHTML = "The big day has arrived!";
+            }
+        }, 1000);
+    </script>
+    <script>
+        window.onload = function() {
+        const flowers = document.querySelectorAll('.flower');
+
+        flowers.forEach(flower => {
+        const randomLeft = Math.random() * 100;
+        flower.style.left = `${randomLeft}%`;
+
+        const randomDuration = Math.random() * 6 + 4;
+        const randomDelay = Math.random() * 2;
+
+        flower.style.animationDuration = `${randomDuration}s`;
+        flower.style.animationDelay = `${randomDelay}s`;
+        });
+        };
+    </script>
+
+</body>
+</html>
