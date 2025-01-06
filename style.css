@@ -8,10 +8,10 @@ body{
     background-size: cover;
 }
 .imge {
-     border: 2px solid rgb(251, 147, 164);
-     border-radius:20px;
-     height: 350px;
-     width: 250px;
+    border: 2px solid rgb(251, 147, 164);
+    border-radius:20px;
+    height: 350px;
+    width: 250px;
 }
 .heart-image {
     height: 70px;
